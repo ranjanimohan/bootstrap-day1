@@ -21,12 +21,55 @@ Notes:	 Hand coded for Udemy.com
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.panel, .panel-default>.panel-heading{
+  background-color: #111;
+}
+.panel-default p{
+  color: #aaa;
+}
+.panel-default{
+  border-color: #555;
+}
+.panel-default>.btn-default {
+    color: #aaa;
+    background-color: #333;
+    border-color: #000;
 
+}
+.panel-default>.btn-default:hover {
+    color: #fff;
+    font-weight: bolder;
+    background-color: #333;
+    border-color: #000;
+}
+.panel-title{
+  color: #eee;
+}
+.navbar-inverse .navbar-brand {
+    color: #ef0154;
+    font-family: 'cookie';
+    font-size: 60px;
+}
+.navbar-inverse .navbar-brand:hover {
+    color: #ef0154;
+    font-family: 'cookie';
+    font-size: 60px;
+}
+.nav{
+  padding-top: 8px;
+}
 /* --------------------------------------
    Typography
    -------------------------------------- */
 
-
+   @font-face {
+     font-family: 'Helvetica Neue';
+     src: url('helveticaneue-light-webfont.woff');
+   }
+   @font-face {
+  font-family: 'cookie' ;
+  src: url('CookieMonster.ttf');
+}
 
 /* --------------------------------------
    Navbar
@@ -38,6 +81,43 @@ Notes:	 Hand coded for Udemy.com
    .navbar-brand{
      padding: 13px 15px;
    }
+   .navbar-inverse{
+     background-color: black;
+   }
+   .navbar-inverse .navbar-nav>li {
+    color: #ef0154;
+    font-family: 'Helvetica Neue';
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.navbar-inverse .dropdown-menu
+    {
+        color: #aaa;
+        background-color: #000;
+        border: 1px solid #222;
+    }
+    .navbar-inverse .dropdown-menu a{
+      color: #fff;
+    }
+    .navbar-inverse .dropdown-menu a:hover{
+      transform: scale(1.01,1.01);
+      font-weight: bold;
+      background-color: black;
+      color: #ef0154;
+    }
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus {
+    color: #ef0154;
+    font-family: 'Helvetica Neue';
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #ef0154;
+    background-color: #080808;
+    font-family: 'Helvetica Neue';
+}
+
+
 /* --------------------------------------
    Carousel
    -------------------------------------- */
@@ -45,11 +125,15 @@ Notes:	 Hand coded for Udemy.com
 #myCarousel{
   margin-top: 60px;
 }
+
 .carousel-caption{
   font-size: 24px;
 }
 .carousel-caption h4{
   font-size: 32px;
+}
+.carousel-inner{
+  margin-top: 80px;
 }
 #myCarousel .item{
   height: 400px;
@@ -71,9 +155,6 @@ Notes:	 Hand coded for Udemy.com
    body{
      background: black;
    }
-   h1, h2, h3, h4, a{
-     color: #ef0154;
-   }
 .row{
   margin-left: 0;
   margin-right: 0;
@@ -86,6 +167,12 @@ Notes:	 Hand coded for Udemy.com
 .page-header{
   margin-top: 0;
 }
+.form-group .form-control{
+  background-color: #333;
+  border-color: #333;
+  color: #999;
+}
+
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
@@ -127,12 +214,37 @@ Notes:	 Hand coded for Udemy.com
   }
 
   #slide1{
-    background: url(../../imag/large1.jpg) top center no-repeat;
+    background: url(../../imag/l1.jpg) top center no-repeat;
   }
   #slide2{
-    background: url(../../imag/large2.jpg) top center no-repeat;
+    background: url(../../imag/l2.jpg) top center no-repeat;
   }
   #slide3{
-    background: url(../../imag/large3.jpg) top center no-repeat;
+    background: url(../../imag/l3.jpg) top center no-repeat;
   }
+}
+/* ---------------------------------------------
+              Footer
+------------------------------------------------*/
+#footer{
+ display:block;
+ margin:auto;
+}
+#footer a{
+  color: #ef0154;
+}
+#footer{
+  padding:30px 0;
+  border-top:1px dotted #666;
+}
+.copyright{
+  float: left;
+  width: 480px;
+  height: 54px;
+  display: inline;
+}
+.socialmedia{
+  float: right;
+  width: 480px;
+  display: inline;
 }
