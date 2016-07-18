@@ -225,7 +225,16 @@
   #myCarousel .item{
     height: 500px;
   }
-
+  .image1{
+    float: left;
+    display: inline;
+    width: 200px;
+  }
+  .desc{
+    float: right;
+    display: inline;
+    width: 900px;
+  }
   #slide1{
     background: url(../../imag/l1.jpg) top center no-repeat;
   }
@@ -240,7 +249,12 @@
 /* -------------------------------------
               Gallery
 ------------------------------------- */
-
+#gallery1{
+  font-family: sans-serif;
+  font-style: italic;
+  color: #ddd;
+  font-size: 15px;
+}
 #gallery{
   margin-top: 100px;
   padding-bottom: 100px;
@@ -273,6 +287,14 @@
 .col-sm-3 a img:hover{
   transform: scale(1.1,1.1);
 }
+
+#gallery1{
+  margin-top: 40px;
+}
+#gallery1 .row .col-lg-12 h1{
+  text-align: left;
+}
+
 /* ---------------------------------------------
               Modal window
 ------------------------------------------------*/
